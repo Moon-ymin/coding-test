@@ -29,3 +29,7 @@ public class Ex4 {
         System.out.println(target);
     }
 }
+
+/* 기억하기
+char to int : char - '0' 아스키 코드 이용
+*/
