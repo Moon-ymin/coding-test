@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="2월 28일 그리디 알고리즘">
-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex4_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex5_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/implementation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/greedy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/README.md" afterDir="false" />
@@ -46,6 +51,8 @@
     "Application.Ex3.executor": "Run",
     "Application.Ex4.executor": "Run",
     "Application.Ex4_1.executor": "Run",
+    "Application.Ex5.executor": "Run",
+    "Application.Ex6.executor": "Run",
     "Application.ee.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -80,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709082148055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2월 28일 그리디 알고리즘">
+      <option name="closed" value="true" />
+      <created>1709090596634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709090596634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -95,6 +110,11 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/greedy/part3/Ex6.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

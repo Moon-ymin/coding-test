@@ -5,6 +5,9 @@
 매 순간 좋은 것을 선택하기 위해서는 다양한 기준(ex. 가장 큰 순서대로, 가장 작은 순서대로)이 있다
 
 ---
+### 자바 표준 입출력
+- https://limkydev.tistory.com/170
+- Scanner의 next(), nextInt(), nextLine() 함수
 ### 빠른 입출력을 위한 BufferedReader, BufferedWriter, StringTokenizer, StringBuilder
 - https://rlakuku-program.tistory.com/33
 #### BufferedReader, BufferedWriter
