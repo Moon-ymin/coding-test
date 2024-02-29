@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="2월 28일 그리디 알고리즘">
-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex5_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/implementation/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex2.java" afterDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="2월 29일 구현 알고리즘">
+      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex1_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implementation/part2/Ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implementation/part2/Ex2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +57,13 @@
     "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,13 +97,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709090596634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2월 29일 그리디 알고리즘">
+      <option name="closed" value="true" />
+      <created>1709105348618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709105348618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2월 29일 구현 알고리즘">
+      <option name="closed" value="true" />
+      <created>1709105358737</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709105358737</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2월 27일 그리디 알고리즘" />
     <MESSAGE value="2월 28일 그리디 알고리즘" />
-    <option name="LAST_COMMIT_MESSAGE" value="2월 28일 그리디 알고리즘" />
+    <MESSAGE value="2월 29일 그리디 알고리즘" />
+    <MESSAGE value="2월 29일 구현 알고리즘" />
+    <option name="LAST_COMMIT_MESSAGE" value="2월 29일 구현 알고리즘" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -115,6 +135,11 @@
           <url>file://$PROJECT_DIR$/src/greedy/part3/Ex6.java</url>
           <line>11</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/implementation/part2/Ex3.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
