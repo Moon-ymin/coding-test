@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="2월 29일 구현 알고리즘">
-      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex1_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/implementation/part2/Ex3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28__12_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28__12_23__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/implementation/part2/Ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implementation/part2/Ex2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implementation/part2/Ex3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implementation/part2/Ex3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -138,8 +138,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/implementation/part2/Ex3.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="10" />
+          <line>39</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
