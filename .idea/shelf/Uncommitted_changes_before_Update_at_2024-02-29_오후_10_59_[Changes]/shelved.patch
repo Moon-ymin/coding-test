@@ -1,0 +1,77 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"26275aa0-626b-4fd5-bc13-58c8a0bd4394\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/README.md\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/README.md\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part2/Ex1.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part2/Ex2.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part2/Ex3.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part2/Ex4.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part3/Ex1.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part3/Ex2.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part3/Ex3.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/greedy/part3/Ex4.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 8\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2cvXiiIYiFmpQKPD6GhmLOue5yI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Ex1.executor\": \"Run\",\r\n    \"Application.Ex2.executor\": \"Run\",\r\n    \"Application.Ex3.executor\": \"Run\",\r\n    \"Application.Ex4.executor\": \"Run\",\r\n    \"Application.ee.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/admin/IdeaProjects/coding-test/src/Main.java\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"26275aa0-626b-4fd5-bc13-58c8a0bd4394\" name=\"Changes\" comment=\"\" />\r\n      <created>1708993157692</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1708993157692</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\r\n          <line>11</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,17 +5,6 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/README.md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part2/Ex1.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part2/Ex2.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part2/Ex3.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part2/Ex4.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex1.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex2.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex3.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex4.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -36,9 +25,9 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 8
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 8
++}</component>
+   <component name="ProjectId" id="2cvXiiIYiFmpQKPD6GhmLOue5yI" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -47,21 +36,21 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Ex1.executor": "Run",
+-    "Application.Ex2.executor": "Run",
+-    "Application.Ex3.executor": "Run",
+-    "Application.Ex4.executor": "Run",
+-    "Application.ee.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
+-    "kotlin-language-version-configured": "true",
+-    "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Ex1.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Ex2.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Ex3.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Ex4.executor&quot;: &quot;Run&quot;,
++    &quot;Application.ee.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/coding-test/src/Main.java&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
