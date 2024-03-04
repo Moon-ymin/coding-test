@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="2월 29일 구현 알고리즘">
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-29__10_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-29__10_59__Changes_.xml" afterDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 4일, DFS BFS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/part3/Ex6_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/part3/Ex6_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS_BFS/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709105358737</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="그리디 추가">
+      <option name="closed" value="true" />
+      <created>1709524488879</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709524488879</updated>
+    </task>
+    <task id="LOCAL-00007" summary="3월 4일, DFS BFS">
+      <option name="closed" value="true" />
+      <created>1709524512265</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709524512265</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,7 +135,9 @@
     <MESSAGE value="2월 28일 그리디 알고리즘" />
     <MESSAGE value="2월 29일 그리디 알고리즘" />
     <MESSAGE value="2월 29일 구현 알고리즘" />
-    <option name="LAST_COMMIT_MESSAGE" value="2월 29일 구현 알고리즘" />
+    <MESSAGE value="그리디 추가" />
+    <MESSAGE value="3월 4일, DFS BFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="3월 4일, DFS BFS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

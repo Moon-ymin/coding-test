@@ -7,14 +7,12 @@
 
 ## 🔍 자료구조(Data Structure)
 - 데이터를 표현하고 관리하고 처리하기 위한 구조
-  - 삽입(Push) : 데이터를 삽입한다
-  - 삭제(Pop) : 데이터를 삭제한다
-  - 오버플로(Overflow) : 데이터의 크기가 이미 가득 찬 상태에서 삽입 연산을 수행할 때 발생
-  - 언더플로(Underflow) : 데이터가 전혀 들어있지 않은 상태에서 삭제 연산을 수행할 때 발생
+    - 삽입(Push) : 데이터를 삽입한다
+    - 삭제(Pop) : 데이터를 삭제한다
+    - 오버플로(Overflow) : 데이터의 크기가 이미 가득 찬 상태에서 삽입 연산을 수행할 때 발생
+    - 언더플로(Underflow) : 데이터가 전혀 들어있지 않은 상태에서 삭제 연산을 수행할 때 발생
 
 ### 📚 스택(Stack)
-- FILO 혹은 LIFO 구조 (like 박스 쌓기)
-- 선언
     import java.util.Stack;
     class StackEx {
         public static void main(String[] args) {
@@ -26,32 +24,31 @@
             Stack<Boolean> stackBool = new Stack<>();
         }
     }
-
+- FILO 혹은 LIFO 구조 (like 박스 쌓기)
 - 메서드
-  1. .push(값) : 값 추가하고 해당 값 반환
-  2. .pop(값) : 값 제거하고 해당 값 반환 
-  3. .add(값) : 값 추가
-  4. .clear() : 값 모두 제거 
-  5. .peek() : 마지막 요소 반환, 제거는 안함
-  6. .empty() : 비어있는지 여부 반환 boolean
-  7. .search(값) : 값의 위치를 인덱스로 반환  
+    1. .push(값) : 값 추가하고 해당 값 반환
+    2. .pop(값) : 값 제거하고 해당 값 반환
+    3. .add(값) : 값 추가
+    4. .clear() : 값 모두 제거
+    5. .peek() : 마지막 요소 반환, 제거는 안함
+    6. .empty() : 비어있는지 여부 반환 boolean
+    7. .search(값) : 값의 위치를 인덱스로 반환
 
 ### 📚 큐(Queue)
+    import java.util.Queue;
+    import java.util.LinkedList;
+    
+    Queue<자료형> 변수명 = new LinkedList<>(); // 해당 자료형만 삽입, 삭제 가능
+    Queue 변수명 = new LinkedList(); // 어떤 자료형이든 삭제, 삽입 가능
 - FIFO 구조 (like 대기줄)
-- 선언
-  import java.util.Queue;
-  import java.util.LinkedList;
-      
-  Queue<자료형> 변수명 = new LinkedList<>(); // 해당 자료형만 삽입, 삭제 가능
-  Queue 변수명 = new LinkedList(); // 어떤 자료형이든 삭제, 삽입 가능
 - 메서드
-  1. .add(값), .offer(값) : 삽입
-  2. .remove(), .poll() : 삭제
-  3. .element(), .peek() : 큐 head에 위치한 value 반환
-  4. .clear() : 초기화
-  5. .size() : 크기
-  6. .contains() : 해당 원소 존재하는지 true false 반환
-  7. .isEmpty() : 공백 큐인지 true | false 반환
+    1. .add(값), .offer(값) : 삽입
+    2. .remove(), .poll() : 삭제
+    3. .element(), .peek() : 큐 head에 위치한 value 반환
+    4. .clear() : 초기화
+    5. .size() : 크기
+    6. .contains() : 해당 원소 존재하는지 true false 반환
+    7. .isEmpty() : 공백 큐인지 true | false 반환
 
 ### 📚 재귀함수 (Recursive Function)
 - 자기자신을 다시 호출하는 함수
