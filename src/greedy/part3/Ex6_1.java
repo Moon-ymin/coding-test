@@ -67,15 +67,43 @@ class Solution {
 }
 
 /* 사용함수
-1. PriorityQueue<> :
-    1) .offer()
-    2) .peek().getTime()
-    3) .poll().getTime()
-    4) .isEmpty()
-2. ArrayList<> :
-    1) .add()
-    2) .sort( Comparator.comparing(Food::getIndex) )
-    3) .get( (int) ((k-sumTime)%length) ).getIndex()
+1. PriorityQueue<> : 일반적인 FIFO의 Queue가 아니라 들어가는 순서와 상관없이 우선
+    순위가 높은 데이터가 먼저 나가는 자료구조
+    - https://kbj96.tistory.com/49
+    - 선언 방법
+        1) 기본형 : 우선순위가 낮은 숫자가 먼저 나옴 (작은 숫자)
+            PriorityQueue<Integer> pQ = new PriorityQueue<>()'
+        2) 우선순위가 높은 숫자가 먼저 나옴 (큰 숫자)
+            PriorityQueue<Integer> pQ = new PriorityQueue<>(Collections.reverseOrder());
+    - 기본 메서드
+        1) .add() : 우선순위 큐에 원소 추가, 꽉 찬 경우 에러 발생
+        2) .offer() : 원소 추가, 실패 시 false를 반환
+        3) .poll() : 첫 번째 값을 반환하고 제거, 비어있으면 null 반환
+        4) .remove() : 첫 번째 값을 반환하고 제거, 비어있으면 에러 발생
+        5) .isEmpty() : 첫 번째 값을 반환하고 제거, 비어있으면 에러 발생
+        6) .peek() : 첫 번째 값을 반환하고 제거하진 않음, 비어있으면 null 반환
+
+2. ArrayList<> : 인덱스 0부터 시작, 연속된 메모리 공간 사용. 크기가 가변적
+    - 선언 방법
+        1) import java.util.ArrayList;
+        2) ArrayList<Integer> list = new ArrayList<>();
+    - 기본 메서드
+        1) .add() : 값 추가
+        2) .set(index, element) : index 에 element 추가
+        3) .remove(index | element) : 값 제거, index 사용시 삭제되는 element 리턴받음
+        4) .clear() : 전체 값 삭제
+        5) .contains() : 값 존재 확인, boolean
+        6) .indexOf() : 값이 존재하는 경우 해당 element의 인덱스 리턴
+        7) .sort() : 오름차순 정렬
+            .sort(list, Collections.reverseOrder()) : 내림차순 정렬
+            .sort( Comparator.comparing(Food::getIndex) )
+        3) .get(index) : 인덱스로 값 확인
+            .get( (int) ((k-sumTime)%length) ).getIndex()
+    - Iterator 인터페이스 ~ iterator() 메소드
+        https://minhamina.tistory.com/18
+       boolean .hasNext() : iteration이 다음 요소를 가지고 있으면 true
+       E .next() : iteration의 다음 요소 반환
+       void .remove() : 컬렉션에서 객체를 제거
  */
 
 /* 효율성검사 실패 이유
