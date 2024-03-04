@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 4일, DFS BFS">
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS_BFS/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/Ex1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Ex1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex4_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ee.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/coding-test/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Ex1.executor": "Run",
+    "Application.Ex2.executor": "Run",
+    "Application.Ex3.executor": "Run",
+    "Application.Ex4.executor": "Run",
+    "Application.Ex4_1.executor": "Run",
+    "Application.Ex5.executor": "Run",
+    "Application.Ex6.executor": "Run",
+    "Application.Ex7.executor": "Run",
+    "Application.Ex8.executor": "Run",
+    "Application.Ex9.executor": "Run",
+    "Application.ee.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -127,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709524512265</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3월 4일, DFS BFS">
+      <option name="closed" value="true" />
+      <created>1709525013095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709525013095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
