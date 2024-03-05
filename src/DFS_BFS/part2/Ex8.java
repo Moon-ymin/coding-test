@@ -15,7 +15,7 @@ public class Ex8 {
         // 0인지 확인
         if (graph[x][y] == 0) {
             graph[x][y] = 1;
-            dfs(x-1, 0); // 상하좌우
+            dfs(x-1, y); // 상하좌우
             dfs(x+1, y);
             dfs(x, y-1);
             dfs(x, y+1);

@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 4일, DFS BFS">
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex9.java" afterDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 4일, DFS BFS part2">
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/Ex1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +52,8 @@
     "Application.Ex7.executor": "Run",
     "Application.Ex8.executor": "Run",
     "Application.Ex9.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.Practice.executor": "Run",
     "Application.ee.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -147,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709525013095</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="3월 4일, DFS BFS part2">
+      <option name="closed" value="true" />
+      <created>1709536528686</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709536528686</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -157,7 +161,8 @@
     <MESSAGE value="2월 29일 구현 알고리즘" />
     <MESSAGE value="그리디 추가" />
     <MESSAGE value="3월 4일, DFS BFS" />
-    <option name="LAST_COMMIT_MESSAGE" value="3월 4일, DFS BFS" />
+    <MESSAGE value="3월 4일, DFS BFS part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="3월 4일, DFS BFS part2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -176,6 +181,11 @@
           <url>file://$PROJECT_DIR$/src/implementation/part2/Ex3.java</url>
           <line>39</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DFS_BFS/part3/Ex2.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
