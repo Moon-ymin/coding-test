@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 4일, DFS BFS part2">
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex3.java" afterDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 5일, DFS BFS">
+      <change afterPath="$PROJECT_DIR$/src/sorting/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/Ex9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/part2/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS_BFS/part2/Ex8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +53,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Ex1.executor": "Run",
+    "Application.Ex10.executor": "Run",
+    "Application.Ex11.executor": "Run",
     "Application.Ex2.executor": "Run",
     "Application.Ex3.executor": "Run",
     "Application.Ex4.executor": "Run",
     "Application.Ex4_1.executor": "Run",
-    "Application.Ex5.executor": "Run",
+    "Application.Ex5.executor": "Debug",
     "Application.Ex6.executor": "Run",
     "Application.Ex7.executor": "Run",
     "Application.Ex8.executor": "Run",
@@ -151,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709536528686</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="3월 5일, DFS BFS">
+      <option name="closed" value="true" />
+      <created>1709621608171</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709621608171</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,7 +182,8 @@
     <MESSAGE value="그리디 추가" />
     <MESSAGE value="3월 4일, DFS BFS" />
     <MESSAGE value="3월 4일, DFS BFS part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="3월 4일, DFS BFS part2" />
+    <MESSAGE value="3월 5일, DFS BFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="3월 5일, DFS BFS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -186,6 +207,11 @@
           <url>file://$PROJECT_DIR$/src/DFS_BFS/part3/Ex2.java</url>
           <line>84</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sorting/part2/Ex5.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
