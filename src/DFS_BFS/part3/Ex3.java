@@ -1,5 +1,5 @@
 package DFS_BFS.part3;
-
+ 
 import java.util.*;
 
 class Virus implements Comparable<Virus>{
