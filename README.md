@@ -78,7 +78,9 @@
 * [문자열 재정렬](src/implementation/part3/Ex2.java)
 * [문자열 압축](src/implementation/part3/Ex3.java)
 * [자물쇠와 열쇠](src/implementation/part3/Ex4.java)
-* 뱀
+  - 2차원 배열 90도 회전 메서드 암기하기
+* [뱀](src/implementation/part3/Ex4.java)
+  - 풀이 봄 -> 다시 풀기!
 * 기둥과 보 설치
 * 치킨 배달
 * 외벽 점검
