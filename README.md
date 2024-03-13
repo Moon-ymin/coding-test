@@ -81,9 +81,10 @@
   - 2차원 배열 90도 회전 메서드 암기하기
 * [뱀](src/implementation/part3/Ex4.java)
   - 풀이 봄 -> 다시 풀기!
-* 기둥과 보 설치
-* 치킨 배달
-* 외벽 점검
+* [기둥과 보 설치](src/implementation/part3/Ex6.java)
+* [치킨 배달](src/implementation/part3/Ex7.java)
+  - Combination 개념 암기하기
+* [외벽 점검](src/implementation/part3/Ex8.java)
 #### 13장 DFS, BFS
 * [특정 거리의 도시 찾기](src/DFS_BFS/part3/Ex1.java)
 * [연구소](src/DFS_BFS/part3/Ex2.java)
