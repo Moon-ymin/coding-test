@@ -85,12 +85,19 @@
 * [치킨 배달](src/implementation/part3/Ex7.java)
   - Combination 개념 암기하기
 * [외벽 점검](src/implementation/part3/Ex8.java)
+  - 풀이 봄 -> 모르겠음
 #### 13장 DFS, BFS
 * [특정 거리의 도시 찾기](src/DFS_BFS/part3/Ex1.java)
 * [연구소](src/DFS_BFS/part3/Ex2.java)
 * [경쟁적 전염](src/DFS_BFS/part3/Ex3.java)
-* 괄호 변환
-* 연산자 끼워 넣기
-* 감시 피하기
+* [괄호 변환](src/DFS_BFS/part3/Ex5.java)
+* [연산자 끼워 넣기](src/DFS_BFS/part3/Ex6.java)
+* [감시 피하기](src/DFS_BFS/part3/Ex7.java)
 * 인구 이동
 * 블록 이동하기
+
+#### 14장 정렬
+* [국영수](src/implementation/part3/Ex1.java)
+* [안테나](src/implementation/part3/Ex2.java)
+* [실패율](src/implementation/part3/Ex3.java)
+* [카드 정렬하기](src/implementation/part3/Ex4.java)
