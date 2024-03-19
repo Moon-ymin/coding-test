@@ -56,6 +56,18 @@
     - part2, 위에서 아래로 -> int와 Integer의 차이
   * [성적이 낮은 순서대로 학생 출력하기](src/sorting/part2/Ex10.java)
   * [두 배열의 원소 교체](src/sorting/part2/Ex11.java)
+#### 7장 이진탐색
+* 이론
+  * 범위를 반씩 좁혀가는 탐색
+  * [순차 탐색](src/binarySearch/part2/Ex1.java)
+  * [재귀 함수를 이용한 이진 탐색](src/binarySearch/part2/Ex2.java)
+  * [반복문을 이용한 이진탐색](src/binarySearch/part2/Ex3.java)
+* 실전
+  * 부품찾기
+    * [이진 탐색](src/binarySearch/part2/Ex4_1.java)
+    * [계수 정렬](src/binarySearch/part2/Ex4_2.java)
+    * [집합(Set) 자료형](src/binarySearch/part2/Ex4_3.java)
+  * [떡볶이 떡 만들기]((src/binarySearch/part2/Ex5.java))
 
 
 ### Part3 알고리즘 유형별 기출문제
@@ -93,11 +105,17 @@
 * [괄호 변환](src/DFS_BFS/part3/Ex5.java)
 * [연산자 끼워 넣기](src/DFS_BFS/part3/Ex6.java)
 * [감시 피하기](src/DFS_BFS/part3/Ex7.java)
-* 인구 이동
-* 블록 이동하기
+* [인구 이동](src/DFS_BFS/part3/Ex7.java)
+* [블록 이동하기](src/DFS_BFS/part3/Ex8.java)
 
 #### 14장 정렬
 * [국영수](src/implementation/part3/Ex1.java)
 * [안테나](src/implementation/part3/Ex2.java)
 * [실패율](src/implementation/part3/Ex3.java)
 * [카드 정렬하기](src/implementation/part3/Ex4.java)
+
+#### 15장 이진탐색
+* [정렬된 배열에서 특정 수의 개수 구하기](src/binarySearch/part3/Ex1.java)
+* [고정점 찾기](src/binarySearch/part3/Ex2.java)
+* [공유기 설치](src/binarySearch/part3/Ex3.java)
+* [가사 검색](src/binarySearch/part3/Ex4.java)
