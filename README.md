@@ -130,3 +130,4 @@
 * [고정점 찾기](src/binarySearch/part3/Ex2.java)
 * [공유기 설치](src/binarySearch/part3/Ex3.java)
 * [가사 검색](src/binarySearch/part3/Ex4.java)
+  - 풀이 봄 -> 모르겠음 
