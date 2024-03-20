@@ -1,0 +1,223 @@
+Index: src/DFS_BFS/part3/Ex8.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/DFS_BFS/part3/Ex8.java b/src/DFS_BFS/part3/Ex8.java
+new file mode 100644
+--- /dev/null	(date 1710657386361)
++++ b/src/DFS_BFS/part3/Ex8.java	(date 1710657386361)
+@@ -0,0 +1,5 @@
++package DFS_BFS.part3;
++
++public class Ex8 {
++    // 블록 이동하기
++}
+Index: src/DFS_BFS/part3/Ex7.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package DFS_BFS.part3;\n\npublic class Ex7 {\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/DFS_BFS/part3/Ex7.java b/src/DFS_BFS/part3/Ex7.java
+--- a/src/DFS_BFS/part3/Ex7.java	(revision 4784284683f85ae76545f14692b67983284580d5)
++++ b/src/DFS_BFS/part3/Ex7.java	(date 1710773704484)
+@@ -1,5 +1,69 @@
+ package DFS_BFS.part3;
+ 
++import java.util.ArrayList;
++import java.util.Arrays;
++import java.util.Scanner;
++
+ public class Ex7 {
++    // 인구 이동
++    /*
++    1. 순회를 하며 방문하지 않은 노드를 방문한다. 이 과정은 모든 노드를 방문할 때까지 반복된다.
++    2. 노드를 방문할 때에는 BFS/DFS 탐색 알고리즘을 사용하여 구현한다.
++        이때 다음으로 이동 할 노드는 현재 노드의 값과의 차이가 L이상 R이하여야 한다.
++
++    3. 방문한 노드들을 차례대로 list에 넣어주고 노드 값의 합을 따로 저장해 둔다.
++
++    4. 모든 노드의 방문이 끝났다면 list에 넣어준 노드들의 인구이동을 시작한다.
++        이때 list의 크기가 1보다 커야 이동을 시작한다.
++
++    5. 이동 시에는 문제의 조건에 맞게 노드 값의 합을 노드의 사이즈로 나눈 값을 모든 노드에 변경시켜준다.
++
++    6. 1 ~ 6과정 동안 인구 이동이 일어난 적이 없다면 더 이상 이동할 수 있는 인구가 없으므로 순회를 멈추고
++        이때의 result값을 반환한다.
++     */
++    static int N, L, R;
++    static int[][] board;
++    static boolean[][] visited;
++    static int[] dx = {0, 1, 0, -1};
++    static int[] dy = {1, 0, -1, 0};
++    static ArrayList<Node> list;    //  인구 이동이 필요한 노드 리스트
++
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        N = sc.nextInt();
++        L = sc.nextInt();
++        R = sc.nextInt();
++
++        board = new int[N][N];
++        for (int i = 0; i < N; i++) {
++            for (int j = 0; j < N; j++) {
++                board[i][j] = sc.nextInt();
++            }
++        }
++        System.out.println(move());
++
++    }
++    public static int move(){   // 더 이상 인구 이동이 일어나지 않을 때까지 반복
++        int result = 0;
++        while(true) {
++            boolean isMove = false;
++            visited = new boolean[N][N];
++            for (int i = 0; i < N; i++) {
++                for (int j = 0; j < N; j++) {
++                    if(!visited[i][j]){
++                        int sum = bfs(i,j);
++                        // bfs 탐색으로 열릴 수 있는 국경선 확인하며 인구 이동할 총 인구수 반환
++                        if (list.size() > 1){
++                            changePopulation(sum);  // 열린 국경선 내의 노드들 인구 변경
++                            isMove = true;
++                        }
++                    }
++                }
++            }
++            if(!isMove) return result;
++            result++;
++        }
++
++    }
+ 
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"26275aa0-626b-4fd5-bc13-58c8a0bd4394\" name=\"Changes\" comment=\"3월 7일, 구현\">\n      <change afterPath=\"$PROJECT_DIR$/src/implementation/part3/Ex6.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/implementation/part3/Ex7.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/implementation/part3/Ex8.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28__12_23__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28_오후_12_23_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-04__9_12__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-04_오전_9_12_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/README.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/README.md\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 8\n}</component>\n  <component name=\"ProjectId\" id=\"2cvXiiIYiFmpQKPD6GhmLOue5yI\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Ex1.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex10.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex11.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex2.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex3.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex4.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex4_1.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex5.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex6.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex7.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex8.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Ex9.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\n    &quot;Application.Practice.executor&quot;: &quot;Run&quot;,\n    &quot;Application.ee.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/coding-test/src/Main.java&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\admin\\IdeaProjects\\coding-test\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"26275aa0-626b-4fd5-bc13-58c8a0bd4394\" name=\"Changes\" comment=\"\" />\n      <created>1708993157692</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1708993157692</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"2월 27일 그리디 알고리즘\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709010400177</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709010400177</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"2월 28일 그리디 알고리즘\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709082148055</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709082148055</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"2월 28일 그리디 알고리즘\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709090596634</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709090596634</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"2월 29일 그리디 알고리즘\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709105348618</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709105348618</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"2월 29일 구현 알고리즘\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709105358737</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709105358737</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"그리디 추가\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709524488879</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709524488879</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"3월 4일, DFS BFS\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709524512265</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709524512265</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"3월 4일, DFS BFS\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709525013095</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709525013095</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"3월 4일, DFS BFS part2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709536528686</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709536528686</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"3월 5일, DFS BFS\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709621608171</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709621608171</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"3월 6일, 정렬 part2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709696626564</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709696626564</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709701419381</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709701419381</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"3월 6일, 그리디 part3\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709709706242</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709709706242</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"3월 7일, 구현\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709795740150</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709795740150</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"15\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"2월 27일 그리디 알고리즘\" />\n    <MESSAGE value=\"2월 28일 그리디 알고리즘\" />\n    <MESSAGE value=\"2월 29일 그리디 알고리즘\" />\n    <MESSAGE value=\"2월 29일 구현 알고리즘\" />\n    <MESSAGE value=\"그리디 추가\" />\n    <MESSAGE value=\"3월 4일, DFS BFS\" />\n    <MESSAGE value=\"3월 4일, DFS BFS part2\" />\n    <MESSAGE value=\"3월 5일, DFS BFS\" />\n    <MESSAGE value=\"3월 6일, 정렬 part2\" />\n    <MESSAGE value=\"update\" />\n    <MESSAGE value=\"3월 6일, 그리디 part3\" />\n    <MESSAGE value=\"3월 7일, 구현\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"3월 7일, 구현\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\n          <line>11</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/greedy/part3/Ex6.java</url>\n          <line>10</line>\n          <option name=\"timeStamp\" value=\"5\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/implementation/part2/Ex3.java</url>\n          <line>39</line>\n          <option name=\"timeStamp\" value=\"10\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/DFS_BFS/part3/Ex2.java</url>\n          <line>84</line>\n          <option name=\"timeStamp\" value=\"12\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/sorting/part2/Ex5.java</url>\n          <line>37</line>\n          <option name=\"timeStamp\" value=\"13\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/DFS_BFS/part3/Ex3.java</url>\n          <line>77</line>\n          <option name=\"timeStamp\" value=\"14\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4784284683f85ae76545f14692b67983284580d5)
++++ b/.idea/workspace.xml	(date 1710659183139)
+@@ -4,16 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 7일, 구현">
+-      <change afterPath="$PROJECT_DIR$/src/implementation/part3/Ex6.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/implementation/part3/Ex7.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/implementation/part3/Ex8.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28__12_23__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28_오후_12_23_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-04__9_12__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-04_오전_9_12_[Changes]/shelved.patch" beforeDir="false" />
++    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 5일, DFS BFS">
++      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex8.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex7.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -53,12 +47,12 @@
+     &quot;Application.Ex3.executor&quot;: &quot;Run&quot;,
+     &quot;Application.Ex4.executor&quot;: &quot;Run&quot;,
+     &quot;Application.Ex4_1.executor&quot;: &quot;Run&quot;,
+-    &quot;Application.Ex5.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Ex5.executor&quot;: &quot;Debug&quot;,
+     &quot;Application.Ex6.executor&quot;: &quot;Run&quot;,
+     &quot;Application.Ex7.executor&quot;: &quot;Run&quot;,
+     &quot;Application.Ex8.executor&quot;: &quot;Run&quot;,
+     &quot;Application.Ex9.executor&quot;: &quot;Run&quot;,
+-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+     &quot;Application.Practice.executor&quot;: &quot;Run&quot;,
+     &quot;Application.ee.executor&quot;: &quot;Run&quot;,
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+@@ -69,15 +63,10 @@
+     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/coding-test/src/Main.java&quot;
+   }
+ }</component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\admin\IdeaProjects\coding-test" />
+-    </key>
+-  </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
++        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -170,39 +159,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1709621608171</updated>
+     </task>
+-    <task id="LOCAL-00011" summary="3월 6일, 정렬 part2">
+-      <option name="closed" value="true" />
+-      <created>1709696626564</created>
+-      <option name="number" value="00011" />
+-      <option name="presentableId" value="LOCAL-00011" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1709696626564</updated>
+-    </task>
+-    <task id="LOCAL-00012" summary="update">
+-      <option name="closed" value="true" />
+-      <created>1709701419381</created>
+-      <option name="number" value="00012" />
+-      <option name="presentableId" value="LOCAL-00012" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1709701419381</updated>
+-    </task>
+-    <task id="LOCAL-00013" summary="3월 6일, 그리디 part3">
+-      <option name="closed" value="true" />
+-      <created>1709709706242</created>
+-      <option name="number" value="00013" />
+-      <option name="presentableId" value="LOCAL-00013" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1709709706242</updated>
+-    </task>
+-    <task id="LOCAL-00014" summary="3월 7일, 구현">
+-      <option name="closed" value="true" />
+-      <created>1709795740150</created>
+-      <option name="number" value="00014" />
+-      <option name="presentableId" value="LOCAL-00014" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1709795740150</updated>
+-    </task>
+-    <option name="localTasksCounter" value="15" />
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+@@ -214,11 +171,7 @@
+     <MESSAGE value="3월 4일, DFS BFS" />
+     <MESSAGE value="3월 4일, DFS BFS part2" />
+     <MESSAGE value="3월 5일, DFS BFS" />
+-    <MESSAGE value="3월 6일, 정렬 part2" />
+-    <MESSAGE value="update" />
+-    <MESSAGE value="3월 6일, 그리디 part3" />
+-    <MESSAGE value="3월 7일, 구현" />
+-    <option name="LAST_COMMIT_MESSAGE" value="3월 7일, 구현" />
++    <option name="LAST_COMMIT_MESSAGE" value="3월 5일, DFS BFS" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -247,11 +200,6 @@
+           <url>file://$PROJECT_DIR$/src/sorting/part2/Ex5.java</url>
+           <line>37</line>
+           <option name="timeStamp" value="13" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/DFS_BFS/part3/Ex3.java</url>
+-          <line>77</line>
+-          <option name="timeStamp" value="14" />
+         </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
