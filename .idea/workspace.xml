@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 7일, 구현">
-      <change afterPath="$PROJECT_DIR$/src/implementation/part3/Ex6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/implementation/part3/Ex7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/implementation/part3/Ex8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28__12_23__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-02-28_오후_12_23_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-04__9_12__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-04_오전_9_12_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 19일 | 이진탐색 part3">
+      <change afterPath="$PROJECT_DIR$/src/DFS_BFS/part3/Ex8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/part2/Ex8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -44,33 +47,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Ex1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex10.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex11.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex4_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex8.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex9.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ee.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/coding-test/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Ex1.executor": "Run",
+    "Application.Ex10.executor": "Run",
+    "Application.Ex11.executor": "Run",
+    "Application.Ex2.executor": "Run",
+    "Application.Ex3.executor": "Run",
+    "Application.Ex4.executor": "Run",
+    "Application.Ex4_1.executor": "Run",
+    "Application.Ex5.executor": "Debug",
+    "Application.Ex6.executor": "Run",
+    "Application.Ex7.executor": "Run",
+    "Application.Ex8.executor": "Run",
+    "Application.Ex9.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Practice.executor": "Run",
+    "Application.ee.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\coding-test\src\dynamic" />
       <recent name="C:\Users\admin\IdeaProjects\coding-test" />
     </key>
   </component>
@@ -202,7 +206,47 @@
       <option name="project" value="LOCAL" />
       <updated>1709795740150</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="3월 13일, 구현">
+      <option name="closed" value="true" />
+      <created>1710314702698</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710314702698</updated>
+    </task>
+    <task id="LOCAL-00016" summary="3월 14일 | part3">
+      <option name="closed" value="true" />
+      <created>1710401176390</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710401176390</updated>
+    </task>
+    <task id="LOCAL-00017" summary="3월 18일 | 이진탐색 part2">
+      <option name="closed" value="true" />
+      <created>1710736047247</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1710736047247</updated>
+    </task>
+    <task id="LOCAL-00018" summary="3월 19일 | 이진탐색 part3">
+      <option name="closed" value="true" />
+      <created>1710814858383</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710814858383</updated>
+    </task>
+    <task id="LOCAL-00019" summary="3월 19일 | 이진탐색 part3">
+      <option name="closed" value="true" />
+      <created>1710832962469</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710832962469</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,7 +262,11 @@
     <MESSAGE value="update" />
     <MESSAGE value="3월 6일, 그리디 part3" />
     <MESSAGE value="3월 7일, 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="3월 7일, 구현" />
+    <MESSAGE value="3월 13일, 구현" />
+    <MESSAGE value="3월 14일 | part3" />
+    <MESSAGE value="3월 18일 | 이진탐색 part2" />
+    <MESSAGE value="3월 19일 | 이진탐색 part3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3월 19일 | 이진탐색 part3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -252,6 +300,21 @@
           <url>file://$PROJECT_DIR$/src/DFS_BFS/part3/Ex3.java</url>
           <line>77</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sorting/part3/Ex4.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/binarySearch/part3/Ex1.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dynamic/part2/Ex5.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
