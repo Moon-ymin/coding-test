@@ -131,3 +131,11 @@
 * [공유기 설치](src/binarySearch/part3/Ex3.java)
 * [가사 검색](src/binarySearch/part3/Ex4.java)
   - 풀이 봄 -> 모르겠음 
+
+#### 16장 다이나믹 프로그래밍
+* [금광](src/dynamic/part3/Ex1.java)
+* [정수 삼각형](src/dynamic/part3/Ex2.java)
+* [퇴사](src/dynamic/part3/Ex3.java)
+* [병사 배치하기](src/dynamic/part3/Ex4.java)
+* [못생긴 수](src/dynamic/part3/Ex5.java)
+* [편집 거리](src/dynamic/part3/Ex6.java)
