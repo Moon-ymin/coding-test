@@ -67,7 +67,7 @@
     * [이진 탐색](src/binarySearch/part2/Ex4_1.java)
     * [계수 정렬](src/binarySearch/part2/Ex4_2.java)
     * [집합(Set) 자료형](src/binarySearch/part2/Ex4_3.java)
-  * [떡볶이 떡 만들기]((src/binarySearch/part2/Ex5.java))
+  * [떡볶이 떡 만들기](src/binarySearch/part2/Ex5.java)
 #### 8장 다이나믹 프로그래밍
 * 이론
   * [비효율적인 피보나치 수열 구현](src/dynamic/part2/Ex1.java)
@@ -83,12 +83,12 @@
 #### 9장 최단 경로
 * 이론
   * 가장 빠른 길 찾기
-  * 간단한 다익스트라 알고리즘
-  * 개선된 다익스트라 알고리즘 (우선순위 큐)
-  * 플로이드 워셜 알고리즘
+  * [간단한 다익스트라 알고리즘](src/shortest_path/part2/Ex1.java)
+  * [개선된 다익스트라 알고리즘](src/shortest_path/part2/Ex2.java) (우선순위 큐)
+  * [플로이드 워셜 알고리즘](src/shortest_path/part2/Ex3.java)
 * 실전
-  * 미래 도시
-  * 전보
+  * [미래 도시](src/shortest_path/part2/Ex4.java)
+  * [전보](src/shortest_path/part2/Ex5.java)
 
 
 ### Part3 알고리즘 유형별 기출문제
@@ -149,3 +149,9 @@
 * [병사 배치하기](src/dynamic/part3/Ex4.java)
 * [못생긴 수](src/dynamic/part3/Ex5.java)
 * [편집 거리](src/dynamic/part3/Ex6.java)
+
+#### 17장 최단 경로
+* [플로이드](src/shortest_path/part3/Ex1.java)
+* [정확한 순위](src/shortest_path/part3/Ex2.java)
+* [화성 탐사](src/shortest_path/part3/Ex3.java)
+* [숨바꼭질](src/shortest_path/part3/Ex4.java)

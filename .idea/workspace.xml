@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 22일 | 다이나믹 프로그래밍 part3">
-      <change afterPath="$PROJECT_DIR$/src/shortest_path/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shortest_path/part2/Ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_24,_12_10 AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_24__12_10AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 25일 | 최단 경로 part2">
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part2/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part2/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part2/Ex4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part2/Ex5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part3/Ex1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-21__12_06__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-21_오후_12_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_24,_10_47 PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_24__10_47PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shortest_path/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/shortest_path/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shortest_path/part2/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shortest_path/part2/Ex1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711090946919</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="3월 25일 | 최단 경로 part2">
+      <option name="closed" value="true" />
+      <created>1711338701154</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1711338701154</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -277,7 +292,8 @@
     <MESSAGE value="3월 18일 | 이진탐색 part2" />
     <MESSAGE value="3월 19일 | 이진탐색 part3" />
     <MESSAGE value="3월 22일 | 다이나믹 프로그래밍 part3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3월 22일 | 다이나믹 프로그래밍 part3" />
+    <MESSAGE value="3월 25일 | 최단 경로 part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="3월 25일 | 최단 경로 part2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
