@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 28일 | 최단 경로 part2">
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 28일 | 최단 경로 part3">
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part3/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part3/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shortest_path/part3/Ex4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shortest_path/part3/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shortest_path/part3/Ex1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     "Application.Ex11.executor": "Run",
     "Application.Ex2.executor": "Run",
     "Application.Ex3.executor": "Run",
-    "Application.Ex4.executor": "Run",
+    "Application.Ex4.executor": "Debug",
     "Application.Ex4_1.executor": "Run",
     "Application.Ex5.executor": "Run",
     "Application.Ex6.executor": "Run",
@@ -268,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711606019502</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="3월 28일 | 최단 경로 part3">
+      <option name="closed" value="true" />
+      <created>1711610628547</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1711610628547</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -291,7 +301,8 @@
     <MESSAGE value="3월 22일 | 다이나믹 프로그래밍 part3" />
     <MESSAGE value="3월 25일 | 최단 경로 part2" />
     <MESSAGE value="3월 28일 | 최단 경로 part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="3월 28일 | 최단 경로 part2" />
+    <MESSAGE value="3월 28일 | 최단 경로 part3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3월 28일 | 최단 경로 part3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,6 +356,16 @@
           <url>file://$PROJECT_DIR$/src/shortest_path/part3/Ex1.java</url>
           <line>56</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/shortest_path/part3/Ex2.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/shortest_path/part3/Ex4.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
