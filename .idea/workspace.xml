@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="3월 29일 | 최단 경로 part3">
-      <change afterPath="$PROJECT_DIR$/src/graph/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part2/Ex8.java" afterDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="4월 1일 | 그래프 이론 part2">
+      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -294,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711693891078</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="4월 1일 | 그래프 이론 part2">
+      <option name="closed" value="true" />
+      <created>1711954841763</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1711954841763</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -319,7 +323,8 @@
     <MESSAGE value="3월 28일 | 최단 경로 part2" />
     <MESSAGE value="3월 28일 | 최단 경로 part3" />
     <MESSAGE value="3월 29일 | 최단 경로 part3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3월 29일 | 최단 경로 part3" />
+    <MESSAGE value="4월 1일 | 그래프 이론 part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="4월 1일 | 그래프 이론 part2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
