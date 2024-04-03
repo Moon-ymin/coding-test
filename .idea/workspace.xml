@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="4월 1일 | 그래프 이론 part2">
-      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/part3/Ex5.java" afterDir="false" />
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="4월 2일 | 그래프 이론 part3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/greedy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/greedy/part2/Ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/part2/Ex2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,31 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Ex1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex10.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex11.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex4.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Ex4_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex7.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex8.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex9.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ee.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/admin/IdeaProjects/coding-test/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Ex1.executor": "Run",
+    "Application.Ex10.executor": "Run",
+    "Application.Ex11.executor": "Run",
+    "Application.Ex2.executor": "Run",
+    "Application.Ex3.executor": "Run",
+    "Application.Ex4.executor": "Debug",
+    "Application.Ex4_1.executor": "Run",
+    "Application.Ex5.executor": "Run",
+    "Application.Ex6.executor": "Run",
+    "Application.Ex7.executor": "Run",
+    "Application.Ex8.executor": "Run",
+    "Application.Ex9.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.Practice.executor": "Run",
+    "Application.ee.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/coding-test/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\IdeaProjects\coding-test\src\graph\" />
@@ -298,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711954841763</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="4월 2일 | 그래프 이론 part3">
+      <option name="closed" value="true" />
+      <created>1712041898259</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712041898259</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -324,16 +329,12 @@
     <MESSAGE value="3월 28일 | 최단 경로 part3" />
     <MESSAGE value="3월 29일 | 최단 경로 part3" />
     <MESSAGE value="4월 1일 | 그래프 이론 part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="4월 1일 | 그래프 이론 part2" />
+    <MESSAGE value="4월 2일 | 그래프 이론 part3" />
+    <option name="LAST_COMMIT_MESSAGE" value="4월 2일 | 그래프 이론 part3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/greedy/part3/Ex6.java</url>
           <line>10</line>
@@ -388,6 +389,11 @@
           <url>file://$PROJECT_DIR$/src/shortest_path/part3/Ex4.java</url>
           <line>107</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

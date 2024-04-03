@@ -33,5 +33,13 @@ public class Ex2 {
         }
         System.out.println(result);
 
+        // 반복되는 수열, m의 크기가 커졌을 경우 시간 초과를 막기 위해 좀 더 효율적인 방법
+        int count = (m / (k+1)) * k;// 가장 큰 수가 더해지는 횟수
+        count += m % (k+1);
+        int total = 0;
+        total += count * arr[n-1];  // 가장 큰 수 더하기
+        total += (m-count) * arr[n-2];  // 중복되지 않게 두 번째로 큰 수 더하기
+        System.out.println(total);
+
     }
 }
