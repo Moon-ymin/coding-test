@@ -115,6 +115,7 @@
 * 볼링공 고르기
   * [내 풀이](src/greedy/part3/Ex5.java)
   * [책 풀이](src/greedy/part3/Ex5_1.java)
+  * [내 풀이-조합이용해봄](src/greedy/part3/Ex5_2.java)
 * 무지의 먹방 라이브
   * [효율성 테스트 실패](src/greedy/part3/Ex6.java)
   * [풀이](src/greedy/part3/Ex6_1.java)

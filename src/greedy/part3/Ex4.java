@@ -9,23 +9,21 @@ public class Ex4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        ArrayList<Integer> coins = new ArrayList<>();
-        String money = sc.next();
+        ArrayList<Integer> arrayList = new ArrayList<>();
 
-        for (int i=0; i<n; i++) {
-            coins.add(  money.charAt(i) - '0' );
+        for (int i = 0; i < n; i++) {
+            arrayList.add(sc.nextInt());
         }
 
-        Collections.sort(coins);
+        Collections.sort(arrayList);
 
         int target = 1;
-        for (int coin : coins){
-            if ( coin > target ){
-                break;
-            } else {
-                target += coin;
-            }
+        for (int i = 0; i < n; i++) {
+            // 만들 수 없는 금액을 찾았을 때 반복 종료
+            if (target < arrayList.get(i)) break;
+            target += arrayList.get(i);
         }
+
         System.out.println(target);
     }
 }

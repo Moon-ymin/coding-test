@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="4월 2일 | 그래프 이론 part3">
+    <list default="true" id="26275aa0-626b-4fd5-bc13-58c8a0bd4394" name="Changes" comment="4월 2일 | 그리디 다시보기">
+      <change afterPath="$PROJECT_DIR$/src/greedy/part3/Ex5_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greedy/part2/Ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/part2/Ex2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/greedy/part3/Ex4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/greedy/part3/Ex4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
     "Application.Ex7.executor": "Run",
     "Application.Ex8.executor": "Run",
     "Application.Ex9.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.Practice.executor": "Run",
     "Application.ee.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -303,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712041898259</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="4월 2일 | 그리디 다시보기">
+      <option name="closed" value="true" />
+      <created>1712129312376</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712129312376</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -330,7 +339,8 @@
     <MESSAGE value="3월 29일 | 최단 경로 part3" />
     <MESSAGE value="4월 1일 | 그래프 이론 part2" />
     <MESSAGE value="4월 2일 | 그래프 이론 part3" />
-    <option name="LAST_COMMIT_MESSAGE" value="4월 2일 | 그래프 이론 part3" />
+    <MESSAGE value="4월 2일 | 그리디 다시보기" />
+    <option name="LAST_COMMIT_MESSAGE" value="4월 2일 | 그리디 다시보기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,8 +402,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="23" />
+          <line>32</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
