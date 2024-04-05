@@ -24,4 +24,23 @@ public class Ex1_1 {
         }
         System.out.println(cnt);
     }
+
+    /* 다른 방식
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int result = 0;
+
+        for (int h = 0; h <= n; h++) {  // 시
+            for (int m = 0; m <= 59; m++) {     // 분
+                for (int s = 0; s <= 59 ; s++) {    // 초
+                    String time = h+"시"+m+"분"+s+"초";
+                    if (time.contains("3")) result++;
+                }
+            }
+        }
+        System.out.println(result);
+
+    }
+     */
 }

@@ -1,42 +1,62 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.NavigableMap;
 import java.util.Scanner;
 
 public class Main{
+    static int[] dx = {-1, 0, 1, 0};
+    static int[] dy = {0, 1, 0, -1};
+    static int dir; // 북 0 동 1 남 2 서 3
+    static void turnLeft() {
+        dir -= 1;
+        if (dir == -1) dir = 3;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[] arr = new int[n]; // 공의 무게들
-        int[] weight = new int[m];  // 무게 별로 공이 몇 개인지, 인덱스 주의
-        for (int i = 0; i < n; i++) {
-            int number = sc.nextInt();
-            arr[i] = number;
-            weight[number-1]++;
-        }
-        Arrays.sort(arr);   // [1 3 2 3 2] -> [1 2 2]
+        int[][] map = new int[n][m];
+        int[][] visit = new int[n][m];
 
-        // 조합 이용 nC2 - 무게 별 같은 무게 공 C2 - 무게 별 같은 무게 공 C2 ...
-        ArrayList<Integer> weight2 = new ArrayList<>();
-        for (int i = 0; i < m; i++) {
-            if ( weight[i] >= 2){
-                weight2.add( weight[i] );   // [ 2 2 ]
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        dir = sc.nextInt();
+        visit[x][y] = 1;
+        int visit_cnt = 1;
+        int cnt = 0;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                map[i][j] = sc.nextInt();
             }
         }
-        // 전체 조합
-        int result = comb(n, 2);
-        for (int i = 0; i < weight2.size(); i++) {
-            result -= comb(weight2.get(i),2);
-        }
+        while(true){
+            turnLeft();
+            int nextx = x + dx[dir];
+            int nexty = y + dy[dir];
 
-        System.out.println(result);
+            if (map[nextx][nexty] == 0 && visit[nextx][nexty] == 0) {
+                x = nextx;
+                y = nexty;
+                visit[x][y] = 1;
+                visit_cnt++;
+                cnt = 0;
+                continue;
+            } else {
+                cnt += 1;
+            }
+            if (cnt == 4) {
+                nextx = x - dx[dir];
+                nexty = y - dy[dir];
 
-    }
-    static int comb(int n, int r){
-        if (r==0 || r == n) {
-            return 1;
-        } else {
-            return comb(n-1, r-1) + comb(n-1, r);
+                if (map[nextx][nexty] == 0){
+                    x = nextx; y = nexty; cnt = 0;
+                } else {
+                    break;
+                }
+            }
         }
+        System.out.println(visit_cnt);
+
     }
 }
