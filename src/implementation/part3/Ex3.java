@@ -9,7 +9,7 @@ public class Ex3 {
         String s = sc.nextLine();
         int answer = s.length(); // 압축되지 않은 문자 그대로 길이
 
-        // 자르는 길이 i
+        // 자르는 길이 i, 문자열 길이의 절반까지 (절반 넘어가면 나눠질 수 없음)
         for (int i = 1; i < s.length() / 2 + 1; i++) {
             String piece = s.substring(0, i); // 자르는 길이만큼 문자열 추출
             String now = ""; // 현재 문자열
