@@ -3,7 +3,7 @@ import com.sun.security.jgss.GSSUtil;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Solution2005 {
+public class swea2005 {
     public static void main(String[] args) throws Exception
     {
         Scanner sc = new Scanner(System.in);
