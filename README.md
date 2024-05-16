@@ -8,6 +8,8 @@
 * [교재 소스코드](https://github.com/ndb796/python-for-coding-test) 
 * Java로 스터디 진행했습니다.
 
+> [SWEA](src/swea) 싸피 코테 대비, 검색해서 풀었던 문제들만 기록하기 
+
 <hr>
 
 ### Part2 주요 알고리즘 이론과 실전문제
