@@ -4,14 +4,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/**
- * 
- * @author SSAFY 궁수 위치 조합으로 찾기
- * 궁수 위치 1행씩 올리면서 적 제거
- * 카운트 최대값과 비교 및 갱신
- */
 
-public class Main{
+public class Main {
 	static int N, M, D, map[][], arrow[], kill;
 
 	public static void main(String[] args) throws IOException {
@@ -38,6 +32,7 @@ public class Main{
 		System.out.println(kill);
 	}
 
+	// 궁수의 위치 조합으로 선택
 	private static void dfs(int depth, int start) {
 		if (depth == 3) {
 			// 궁수 3명의 위치 모두 선택함 - 제거할 수 있는 적의 수 카운트하기
@@ -50,7 +45,7 @@ public class Main{
 			dfs(depth + 1, i + 1);
 		}
 	}
-
+	// 궁수가 공격 범위 내에서 가장 가까운, 왼쪽부터 적 공격
 	private static int shooting() {
 		int[][] temp = new int[N][M];
 		for (int i = 0; i < N; i++) {
@@ -59,39 +54,46 @@ public class Main{
 
 		int death = 0;
 		for (int turn = 0; turn < N; turn++) {
-			boolean[][] attacked = new boolean[N][M];
+			// 궁수들의 가장 가까운 적 위치
+			int[][] toAttack = new int[3][2];
+			for (int i = 0; i < 3; i++) {
+				toAttack[i][0] = -1; // 초기값: x좌표
+				toAttack[i][1] = -1; // 초기값: y좌표
+			}
 
-			for (int k = 0; k < 3; k++) {
-				int arr = arrow[k];
+			// 적 찾기
+			for (int a = 0; a < 3; a++) {
 				int minDist = Integer.MAX_VALUE;
 				int targetX = -1, targetY = -1;
-
-				for (int i = N - 1; i >= 0; i--) {
-					for (int j = 0; j < M; j++) {
-						if (temp[i][j] == 1) {
-							int dist = (N - i) + Math.abs(arr - j);
-							if (dist <= D) {
-								if (dist < minDist || (dist == minDist && j < targetY)) {
-									minDist = dist;
-									targetX = i;
-									targetY = j;
-								}
+				for(int i=N-1; i>=0; i--) {
+					for(int j=0; j<M; j++) {
+						if (temp[i][j] != 1) continue;
+						int dist = (N-i) + Math.abs(arrow[a]-j);
+						if (dist <= D){
+							if (dist < minDist || (dist==minDist && j <targetY)) {
+								minDist = dist;
+								targetX = i; targetY = j;
 							}
 						}
 					}
 				}
 
+				// 공격할 적 위치 저장하기
 				if (targetX != -1 && targetY != -1) {
-					attacked[targetX][targetY] = true;
+					toAttack[a][0] = targetX;
+					toAttack[a][1] = targetY;
 				}
 			}
 
-			for (int i = 0; i < N; i++) {
-				for (int j = 0; j < M; j++) {
-					if (attacked[i][j]) {
-						temp[i][j] = 0;
-						death++;
-					}
+
+			// 추적한 적들을 제거
+			for (int i = 0; i < 3; i++) {
+				int targetX = toAttack[i][0];
+				int targetY = toAttack[i][1];
+
+				if (targetX != -1 && targetY != -1 && temp[targetX][targetY] == 1) {
+					temp[targetX][targetY] = 0;
+					death++;
 				}
 			}
 
@@ -99,7 +101,7 @@ public class Main{
 			for (int i = N - 1; i > 0; i--) {
 				temp[i] = temp[i - 1].clone();
 			}
-			temp[0] = new int[M];
+			temp[0] = new int[M]; // 제일 위 행은 아무것도 없음
 		}
 
 		return death;
