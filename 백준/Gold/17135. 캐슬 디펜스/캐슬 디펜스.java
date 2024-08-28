@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -35,9 +34,7 @@ public class Main {
 	// 궁수의 위치 조합으로 선택
 	private static void dfs(int depth, int start) {
 		if (depth == 3) {
-			// 궁수 3명의 위치 모두 선택함 - 제거할 수 있는 적의 수 카운트하기
-			int death = shooting();
-			kill = Math.max(kill, death);
+			kill = Math.max(kill, shooting());
 			return;
 		}
 		for (int i = start; i < M; i++) {
@@ -55,16 +52,16 @@ public class Main {
 		int death = 0;
 		for (int turn = 0; turn < N; turn++) {
 			// 궁수들의 가장 가까운 적 위치
-			int[][] toAttack = new int[3][2];
+			int[][] attacks = new int[3][2];
 			for (int i = 0; i < 3; i++) {
-				toAttack[i][0] = -1; // 초기값: x좌표
-				toAttack[i][1] = -1; // 초기값: y좌표
+				attacks[i][0] = -1; // 초기값: x좌표
+				attacks[i][1] = -1; // 초기값: y좌표
 			}
-
-			// 적 찾기
+			// 적 위치 찾기
 			for (int a = 0; a < 3; a++) {
 				int minDist = Integer.MAX_VALUE;
 				int targetX = -1, targetY = -1;
+
 				for(int i=N-1; i>=0; i--) {
 					for(int j=0; j<M; j++) {
 						if (temp[i][j] != 1) continue;
@@ -80,16 +77,16 @@ public class Main {
 
 				// 공격할 적 위치 저장하기
 				if (targetX != -1 && targetY != -1) {
-					toAttack[a][0] = targetX;
-					toAttack[a][1] = targetY;
+					attacks[a][0] = targetX;
+					attacks[a][1] = targetY;
 				}
 			}
 
 
-			// 추적한 적들을 제거
+			// 적들을 제거
 			for (int i = 0; i < 3; i++) {
-				int targetX = toAttack[i][0];
-				int targetY = toAttack[i][1];
+				int targetX = attacks[i][0];
+				int targetY = attacks[i][1];
 
 				if (targetX != -1 && targetY != -1 && temp[targetX][targetY] == 1) {
 					temp[targetX][targetY] = 0;
