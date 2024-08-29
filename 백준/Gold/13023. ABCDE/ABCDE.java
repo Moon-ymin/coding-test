@@ -1,9 +1,10 @@
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 /**
- * 인접리스트 만들기 -> BFS 진행해서 너비 5이상이면 친구관계 있다고 판단하고 break
+ * 인접리스트 만들기 -> DFS 진행해서 너비 5이상이면 친구관계 있다고 판단하고 break
  * @author SSAFY
  *
  */
@@ -36,14 +37,15 @@ public class Main {
             if(map[i].size() == 0) continue;
             isVisited = new boolean[N];
 
-            dfs(i, 0);
+            dfs(i, 1);
+
             if (isFriend) break;
         }
         System.out.println(isFriend ? 1 : 0);
 
     }
     private static void dfs(int node, int depth) {
-        if (depth == 4) {
+        if (depth == 5) {
             isFriend = true;
             return;
         }
