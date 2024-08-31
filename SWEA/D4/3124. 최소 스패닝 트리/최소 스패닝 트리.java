@@ -1,77 +1,74 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
 
 public class Solution {
-	static int[] parents;
-	static int V, E;
-	static class Edge implements Comparable<Edge>{
-		int start, end, value;
+    static class Node implements Comparable<Node> {
+        int to, weight;
+        public Node(int to, int weight) {
+            this.to = to;
+            this.weight = weight;
+        }
+        @Override
+        public int compareTo(Node o) {
+            return Integer.compare(this.weight, o.weight);
+        }
+    }
+    static int V, E;
+    static long result;
+    static List<Node> adjList[];
+    static boolean[] visited;
 
-		public Edge(int start, int end, int value) {
-			super();
-			this.start = start;
-			this.end = end;
-			this.value = value;
-		}
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
 
-		@Override
-		public int compareTo(Edge o) {
-			return Integer.compare(this.value, o.value );
-		}
-		
-	}
-	
-	static void make() {
-		parents = new int[V+1];
-		for(int i=1; i<=V; i++) {
-			parents[i] = -1;
-		}
-	}
-	static int findSet(int a) {
-		if (parents[a] < 0) return a;
-		return parents[a] = findSet(parents[a]);
-	}
-	static boolean unionSet(int a, int b) {
-		int aRoot = findSet(a);
-		int bRoot = findSet(b);
-		if (aRoot == bRoot) return false;
-		
-		// 노드 연결하기
-		parents[aRoot] += parents[bRoot];
-		parents[bRoot] = aRoot;
-		return true;
-	}
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int T = sc.nextInt();
-		
-		for(int t=1; t<=T; t++) {
-			V = sc.nextInt();
-			E = sc.nextInt();
-			
-			// 노드 만들기
-			List<Edge> edges = new ArrayList<>();
-			for(int e=0; e<E; e++) {
-				int start = sc.nextInt();
-				int end = sc.nextInt();
-				int value = sc.nextInt();
-				
-				edges.add(new Edge(start, end, value));
-			}
-			// 정렬 먼저
-			Collections.sort(edges);
-			make();
-			
-			int cnt=0; long cost = 0;
-			for(Edge edge : edges) {
-				if (unionSet(edge.start, edge.end)) {
-					cost += edge.value;
-					if (++cnt == V) break;
-				}
-			}
-			System.out.println("#"+t+" "+cost);
-		}
-	}
+        int T = Integer.parseInt(br.readLine());
+        for (int t=1; t<=T; t++) {
+            st = new StringTokenizer(br.readLine());
+            V = Integer.parseInt(st.nextToken());
+            E = Integer.parseInt(st.nextToken());
+            adjList = new ArrayList[V+1];
+            visited = new boolean[V+1];
+
+            for(int i=1; i<=V; i++) {
+                adjList[i] = new ArrayList<>();
+            }
+
+            for (int e=1; e<=E; e++) {
+                // 정점 A, 정점 B의 가중치 C
+                st = new StringTokenizer(br.readLine());
+                int A = Integer.parseInt(st.nextToken());
+                int B = Integer.parseInt(st.nextToken());
+                int C = Integer.parseInt(st.nextToken());
+
+                adjList[A].add(new Node(B, C));
+                adjList[B].add(new Node(A, C));
+            }
+
+            result = 0;
+
+            PriorityQueue<Node> pq = new PriorityQueue<>();
+
+            pq.offer(new Node(1, 0));
+
+            while(!pq.isEmpty()) {
+                Node cur = pq.poll();
+                int curTo = cur.to;
+                int curWeight = cur.weight;
+
+                if(visited[curTo]) continue;
+                visited[curTo] = true;
+                result += curWeight;
+
+                for(Node node : adjList[curTo]) {
+                    if (visited[node.to]) continue;
+                    pq.offer(node);
+                }
+            }
+            System.out.println("#"+t+" "+result);
+        }
+
+    }
 }
