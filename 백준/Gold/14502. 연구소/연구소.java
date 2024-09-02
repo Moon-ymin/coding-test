@@ -1,86 +1,100 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class Main {
-    static int n, m, result = 0;
-    static int[][] before = new int[8][8]; // 초기 맵
-    static int[][] after = new int[8][8]; // 벽 설치 후 맵
+	static int N, M, map[][], wall[], max;
+	static int[] dx = {-1, 1, 0, 0};
+	static int[] dy = {0, 0, -1, 1};
+	static List<int[]> blank;
+	
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		map = new int[N][M];
+		blank = new ArrayList<>();
+		for(int i=0; i<N; i++) {
+			st = new StringTokenizer(br.readLine());
+			for(int j=0; j<M; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+				if (map[i][j] == 0) blank.add(new int[] {i, j});
+			}
+		}
+		wall = new int[3];
+		max = Integer.MIN_VALUE;
+		dfs(0, 0);
+		System.out.println(max);
+	}
+	// 1. 빈칸 중 벽을 세울 3칸 선택 -> 조합 사용
+	private static void dfs(int depth, int start) {
+		if (depth == 3) {
+			// 벽 세울 빈칸 3개 선택 완료
+			max = Math.max(install(), max);
+			return;
+		}
+		for(int idx=start; idx<blank.size(); idx++) {
+			wall[depth] = idx; // blank의 인덱스만 저장하기
+			dfs(depth+1, idx+1);
+			
+		}
+	}
+	// 2. 벽 세운 상태로 바이러스 퍼진 거 구현
+	private static int install() {
+		int[][] temp = new int[N][M];
+		for(int i=0; i<temp.length; i++) {
+			temp[i] = Arrays.copyOf(map[i], M);
+		}
+		for(int i=0; i<wall.length; i++) {
+			int r = blank.get(wall[i])[0];
+			int c = blank.get(wall[i])[1];
+			temp[r][c] = 1;
+		}
+		boolean[][] isVisited = new boolean[N][M];
+		Queue<int[]> q = new ArrayDeque<>();
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<M; j++) {
+				if (temp[i][j]==2 && !isVisited[i][j]) {
+					q.offer(new int[] {i,j});
+					
+					while(!q.isEmpty()) {
+						int[] cur = q.poll();
+						int x = cur[0];
+						int y = cur[1];
+						isVisited[x][y] = true;
+						
+						for(int dir=0; dir<4; dir++) {
+							int nx = x + dx[dir];
+							int ny = y + dy[dir];
+							if (nx<0||ny<0||nx>=N||ny>=M||temp[nx][ny]!=0||isVisited[nx][ny]) continue;
+							temp[nx][ny] = 2;
+							q.offer(new int[] {nx, ny});
+						}
+					}
+				}
+			}
+		}
+		
+		return countSafe(temp);
+	}
+	// 3. 안전 영역의 크기 
+	private static int countSafe(int[][] temp) {
+		int result = 0;
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<M; j++) {
+				if (temp[i][j]==0) result++;
+			}
+		}
+		return result;
+	}
 
-    // 4가지 이동 방향
-    static int[] dx = { -1, 0, 1, 0};
-    static int[] dy = { 0, 1, 0, -1};
-
-    // 바이러스 퍼지는 DFS
-    public static void virus(int x, int y) {
-        for (int i = 0; i < 4; i++) {
-            int nx = x + dx[i];
-            int ny = y + dy[i];
-            // 상, 하, 좌, 우 중에서 바이러스가 퍼질 수 있는 경우
-            if (nx >= 0 && nx < n && ny >= 0 && ny < m ) {
-                if (after[nx][ny] == 0) {
-                    // 바이러스 배치하기, 다시 재귀 수행
-                    after[nx][ny] = 2;
-                    virus(nx, ny);
-                }
-            }
-        }
-    }
-
-    // 안전영역 계산 메서드
-    public static int safe() {
-        int zero = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (after[i][j] == 0) zero++;
-            }
-        }
-        return zero;
-    }
-
-    // DFS로 벽 설치하면서 매 번 안전영역 계산
-    public static void dfs(int count){
-        // 벽이 3개인 경우
-        if (count == 3) {
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    after[i][j] = before[i][j];
-                }
-            }
-            // 각 바이러스의 위치에서 전파 발생
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    if(after[i][j] == 2) { virus(i, j); }
-                }
-            }
-            // 안전 영역의 최대값
-            result = Math.max(result, safe());
-            return;
-        }
-        // 빈 공간에 벽 설치
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (before[i][j] == 0) {
-                    before[i][j] = 1; // 방문처리
-                    count++;          // 방문처리 ⇒ 벽 세움
-                    dfs(count);
-                    before[i][j] = 0;
-                    count--;
-                }
-            }
-        }
-    }
-
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        m = sc.nextInt();
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                before[i][j] = sc.nextInt();
-            }
-        }
-        dfs(0);
-        System.out.println(result);
-    }
 }
